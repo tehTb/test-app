@@ -1,0 +1,49 @@
+
+.pokeInfo-stats-container{
+    margin-bottom: 10px; 
+    border: 1px solid gray;
+    padding: 10px;
+    background-color: beige;
+}
+
+.pokeInfo-card{
+    display: flex;
+}
+
+.pokeInfo-img{
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+.pokeInfo-stats-type{
+    padding-right: 5px;
+    text-shadow: 0 0 1px #000000, 0 0 2px #000000;
+}
+
+.pokeInfo-move-container{
+    display: flex; 
+    flex-wrap: wrap;
+    border: 1px solid lightgray;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.pokeInfo-move{
+    background-color: lightgray;
+    padding: 10px; 
+    margin: 5px; 
+    font-size: 12px; 
+    border-radius: 50%;
+    transition: 100ms ease-in-out;
+}
+
+.pokeInfo-move-container > a{
+    text-decoration: none;
+    color: black;
+}
+
+.pokeInfo-move:hover{
+    background-color:rgb(104, 104, 104);
+    color: white;
+    transform: scale(145%);
+}

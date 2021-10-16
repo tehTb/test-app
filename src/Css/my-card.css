@@ -1,0 +1,75 @@
+.my-card-container{
+    background-color: gray;
+    margin: 25px;
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.my-card-container > a{
+    text-decoration: none;
+    color: black;
+}
+
+.my-card, .my-card-red, .my-card-blue, .my-card-orange{
+    width: auto;
+    height: auto;
+    border: 1px solid lightgray;
+    background-color: white;
+    margin-right: 25px;
+    border-left: 5px solid black;
+    overflow: auto;
+}
+
+.my-card-red{
+    border-left: 5px solid red;
+    background: linear-gradient(to right, rgb(255, 107, 107) 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .25s ease-out;
+}
+
+.my-card-blue{
+    border-left: 5px solid blue;
+    background: linear-gradient(to right, rgb(127, 183, 255) 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .25s ease-out;
+}
+
+.my-card-orange{
+    border-left: 5px solid orange;
+    background: linear-gradient(to right, rgb(255, 185, 74) 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .25s ease-out;   
+}
+
+.my-card:hover, .my-card-red:hover, .my-card-blue:hover, .my-card-orange:hover{
+    background-position: left bottom;
+}
+
+.my-card-header{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    background-color: lightgray;
+    padding: 10px;
+    margin: 0;
+}
+
+.my-card-content{
+    margin: 10px; 
+    padding: 10px; 
+}
+
+
+@media only screen and (max-width: 600px){
+    .my-card-container{
+        flex-direction: column;
+    }
+
+    .my-card, .my-card-red, .my-card-blue, .my-card-orange{
+        margin-bottom: 20px;
+    }
+}
